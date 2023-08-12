@@ -1,0 +1,25 @@
+#include <stdio.h>
+int waitingtime(int proc[],int n,int burst_time[],int wait_time[])
+{
+    wait_time[0]=0;
+    for(int i=1;i<n;i++)
+    wait_time[i]=burst_time[i-1]+wait_time[i-1];
+    return 0;
+}
+int turn aroundtime(int proc[],int n,int burst_time[],int wait_time[],int tat[])
+{
+    int i;
+    for (i=0;i<n;i++)
+    tat[i]=burst_time[i]+wit_time[i];
+    return 0;
+}
+int avgtime(int proc[],int n, int burst_time[])
+{
+    int wait_time[n],tat[n],total_wt=0,total_tat=0;
+    int i;
+    waitingtime(proc,n,burst_time,wait_time);
+    printf("Process waiting turn around\n");
+    for(i=0;i<n;i++){
+        total_wt=total_wt+wait_time[i]
+    }
+}
